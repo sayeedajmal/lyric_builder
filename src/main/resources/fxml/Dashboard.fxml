@@ -83,5 +83,6 @@
             <Font name="SF Pro Display Heavy" size="17.0" />
          </font>
       </JFXButton>
+      <Text fill="#868686" layoutX="525.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made By Sayeed Ajmlal" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="5.0" />
    </children>
 </AnchorPane>

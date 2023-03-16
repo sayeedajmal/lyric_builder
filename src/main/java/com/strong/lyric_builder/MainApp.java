@@ -16,10 +16,10 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Dashboard.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/style.css");
-        /*
-         * Image icon = new Image("/images/hotline.png");
-         * primaryStage.getIcons().add(icon);
-         */
+
+        Image icon = new Image("/images/icon.png");
+        primaryStage.getIcons().add(icon);
+
         primaryStage.setFullScreen(false);
         primaryStage.setFullScreenExitHint("");
         primaryStage.setMaximized(false);
