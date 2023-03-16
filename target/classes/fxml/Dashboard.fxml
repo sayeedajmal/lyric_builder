@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="673.0" style="-fx-background-color: #1e272d;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.strong.lyric_builder.DashController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="430.0" onAction="#OpenFile" ripplerFill="#08ee4d" text="Open File" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="SF Pro Display Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="28.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyric Builder" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="24.0244140625">
+         <font>
+            <Font name="Liberation Mono Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="Liberation Sans Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="601.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Any Symbol" textAlignment="CENTER" wrappingWidth="40.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="262.6748046875">
+         <font>
+            <Font name="Liberation Mono" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="Error" fill="RED" fontSmoothingType="LCD" layoutX="249.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="334.62158203125" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Liberation Mono Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="24.0" layoutY="138.48291015625" strokeType="OUTSIDE" strokeWidth="0.0" text="[" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="121.0">
+         <font>
+            <Font name="Liberation Mono" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="minute" layoutX="37.0" layoutY="120.0" prefHeight="26.0" prefWidth="34.0" style="-fx-font-family: Liberation Mono;" text="00" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="120.0" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" AnchorPane.leftAnchor="71.0">
+         <font>
+            <Font name="Liberation Mono" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="second" layoutX="83.0" layoutY="120.0" prefHeight="26.0" prefWidth="34.0" text="00" AnchorPane.leftAnchor="83.0" />
+      <Text fill="WHITE" layoutX="116.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="120.51708984375">
+         <font>
+            <Font name="Liberation Mono" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mill" layoutX="141.0" layoutY="117.0" prefHeight="26.0" prefWidth="34.0" text="00" AnchorPane.leftAnchor="129.0" AnchorPane.topAnchor="120.0" />
+      <Text fill="WHITE" layoutX="164.0" layoutY="138.48291015625" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="3.60205078125" AnchorPane.leftAnchor="164.0" AnchorPane.topAnchor="121.0">
+         <font>
+            <Font name="Liberation Mono" size="21.0" />
+         </font>
+      </Text>
+      <JFXTextArea fx:id="lyrics" focusColor="#5540a8" labelFloat="true" layoutX="23.0" layoutY="197.0" promptText="Write Lyrics" styleClass="textarea" stylesheets="@../styles/style.css" unFocusColor="#00eb46" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="76.0">
+         <font>
+            <Font name="SF Pro Display Regular" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <TextField fx:id="symbol" layoutX="604.0" layoutY="291.0" prefHeight="26.0" prefWidth="34.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="291.0" />
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="273.0" layoutY="421.0" onAction="#Add" ripplerFill="#058331" text="ADD" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="325.0">
+         <font>
+            <Font name="SF Pro Display Black" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="618.0" layoutY="15.0" onAction="#Close" ripplerFill="#c61f0d" text="X" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="NimbusSans-Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="FileName" fill="WHITE" layoutX="259.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Name" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="SF Pro Display Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="444.0" layoutY="29.0" onAction="#Read" ripplerFill="#1a6b1f" text="Read File" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Display Heavy" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
