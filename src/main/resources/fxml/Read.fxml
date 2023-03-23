@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="731.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.strong.lyric_builder.ReadController">
+   <children>
+      <JFXTextArea fx:id="readText" layoutX="7.0" layoutY="6.0" prefHeight="400.0" prefWidth="600.0" styleClass="track-background" stylesheets="@../styles/style.css" wrapText="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Noto Sans Arabic" size="16.0" />
+         </font></JFXTextArea>
+      <Text layoutX="30.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyric Editor" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="SF Pro Display Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="699.0" layoutY="3.0" onAction="#Close" prefHeight="16.0" prefWidth="23.0" ripplerFill="#c61f0d" style="-fx-background-color: white;" text="X" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" defaultButton="true" ellipsisString="" layoutX="328.0" layoutY="447.0" onAction="#Save" prefHeight="36.0" prefWidth="76.0" ripplerFill="#c61f0d" style="-fx-text-fill: green;" text="SAVE" textAlignment="CENTER" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="328.0" AnchorPane.rightAnchor="327.0">
+         <font>
+            <Font name="Quicksand Medium" size="19.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="info" fill="#3e970a" layoutX="152.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="SF Pro Display Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

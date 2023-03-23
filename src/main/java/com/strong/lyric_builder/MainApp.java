@@ -16,13 +16,8 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Dashboard.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/style.css");
-
         Image icon = new Image("/images/icon.png");
         primaryStage.getIcons().add(icon);
-
-        primaryStage.setFullScreen(false);
-        primaryStage.setFullScreenExitHint("");
-        primaryStage.setMaximized(false);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

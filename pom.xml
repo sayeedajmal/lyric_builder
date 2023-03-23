@@ -6,8 +6,7 @@
   <artifactId>lyric_builder</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>lyric_builder</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://sayeedthedev.web.app</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>

@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="673.0" style="-fx-background-color: #1e272d;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.strong.lyric_builder.DashController">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="430.0" onAction="#OpenFile" ripplerFill="#08ee4d" text="Open File" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="430.0" onAction="#OpenFile" ripplerFill="#08ee4d" style="-fx-background-color: black;" text="Open File" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="SF Pro Display Bold" size="17.0" />
          </font>
@@ -63,12 +63,12 @@
          </font>
       </JFXTextArea>
       <TextField fx:id="symbol" layoutX="604.0" layoutY="291.0" prefHeight="26.0" prefWidth="34.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="291.0" />
-      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="273.0" layoutY="421.0" onAction="#Add" ripplerFill="#058331" text="ADD" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="325.0">
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="273.0" layoutY="421.0" onAction="#Add" ripplerFill="#058331" style="-fx-background-color: black;" text="ADD" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="325.0">
          <font>
             <Font name="SF Pro Display Black" size="21.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="618.0" layoutY="15.0" onAction="#Close" ripplerFill="#c61f0d" text="X" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+      <JFXButton buttonType="RAISED" layoutX="618.0" layoutY="15.0" onAction="#Close" ripplerFill="#c61f0d" style="-fx-background-color: white;" text="X" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
          <font>
             <Font name="NimbusSans-Bold" size="19.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="SF Pro Display Bold" size="15.0" />
          </font>
       </Text>
-      <JFXButton buttonType="RAISED" layoutX="444.0" layoutY="29.0" onAction="#Read" ripplerFill="#1a6b1f" text="Read File" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="444.0" layoutY="29.0" onAction="#Read" ripplerFill="#1a6b1f" style="-fx-background-color: black;" text="Read File" textFill="WHITE">
          <font>
             <Font name="SF Pro Display Heavy" size="17.0" />
          </font>

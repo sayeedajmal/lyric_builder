@@ -1,11 +1,40 @@
 .textarea {
   -fx-text-fill: white;
 }
-.table-view .virtual-flow .scroll-bar:vertical,
-.table-view .virtual-flow .scroll-bar:vertical .track,
-.table-view .virtual-flow .scroll-bar:vertical .track-background,
-.table-view .virtual-flow .scroll-bar:horizontal,
-.table-view .virtual-flow .scroll-bar:horizontal .track,
-.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+
+.textarea .column-header-background {
+  -fx-background-color: #00c4f044;
+  -fx-border-radius: 30px;
+}
+
+.textarea.column-header {
+  -fx-background-color: transparent;
+}
+
+/* .table-view .table-cell {
+  -fx-border-color: transparent;
+} */
+
+.table-row-cell:hover {
+  -fx-background-color: #93f9b911;
+  -fx-text-background-color: red;
+}
+
+.table-row-cell:odd {
+  -fx-background-color: #93f9b911;
+}
+
+.table-row-cell:even {
+  -fx-background-color: #1dbbdd11;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:vertical .track,
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal,
+.scroll-bar:horizontal .track-background {
   -fx-background-color: rgb(0, 183, 255);
+  -fx-color: rgb(5, 194, 62);
+  -fx-border-radius: 10px;
+  -fx-column-width: 10px;
 }
